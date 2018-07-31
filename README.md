@@ -23,9 +23,9 @@ composer install
 ```
 
 
-My database in public/sql
+My database 
 ```
-composer install
+ public/sql
 ```
 If you don't have composer, you can get it from [Composer](https://getcomposer.org/)
 
