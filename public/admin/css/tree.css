@@ -1,0 +1,363 @@
+
+.tree ul {
+    padding-top: 20px; position: relative;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.tree li {
+    float: left; text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+
+    /*new*/
+    /*border: 1px solid #ccc;*/
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+
+    height: 139px;
+    width: 100px;
+
+    position: absolute;
+    left: 200px;
+    top: 25px;
+    float: left;
+}
+
+/*new*/
+.tree li:nth-child(1) {
+    left: -500px;
+}
+
+.tree li:nth-child(2) {
+    left: 500px;
+}
+
+
+
+/*We will use ::before and ::after to draw the connectors*/
+
+/*.tree li::before, .tree li::after{*/
+    /*content: '';*/
+    /*position: absolute; top: 0; right: 50%;*/
+    /*border-top: 1px solid #ccc;*/
+    /*width: 50%; height: 20px;*/
+/*}*/
+/*.tree li::after{*/
+    /*right: auto; left: 50%;*/
+    /*border-left: 1px solid #ccc;*/
+/*}*/
+
+/*We need to remove left-right connectors from elements without
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+    border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+    content: '';
+    position: absolute; top: 0; left: 50%;
+    border-left: 0px solid #ccc;
+    width: 0; height: 20px;
+}
+
+.tree li a.inner_block{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #2A3F54;
+    font-weight: bolder;
+    font-family: arial;
+    font-size: 9px;
+    display: inline-block;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    height: 135px;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.first_inner_block{
+    height: 170px !important;
+    width: 150px !important;
+}
+
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+    background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after,
+.tree li a:hover+ul li::before,
+.tree li a:hover+ul::before,
+.tree li a:hover+ul ul::before{
+    border-color:  #94a0b4;
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+
+
+
+/*my tree*/
+
+
+.parent_block {
+    position: relative;
+    left: 1000px;
+    display: block;
+}
+
+.tree_block {
+    /*border: 1px solid #ccc;*/
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    height: 170px;
+    width: 150px;
+    position: absolute;
+    left: 200px;
+    top: 330px;
+    float: left;
+}
+
+.tree_block:nth-child(1) {
+    left: -500px;
+}
+
+.tree_block:nth-child(2) {
+    left: 500px;
+}
+
+.node_arrow {
+    position: absolute;
+    height: 205px;
+    width: 409px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    top: 124px;
+}
+
+.left_node_arrow {
+    background: url(http://aimnm.com/uploads/network_uploader/555c22bd337b199ba6ef6d3d31f06ecb.png);
+    right: 150px;
+}
+
+.right_node_arrow {
+    background: url(http://aimnm.com/uploads/network_uploader/8aab56b86f68b5aded7f6084a8b0922f.png);
+    left: 150px;
+}
+
+.first_li_level{
+    left: 40% !important;
+    height: 170px !important;
+    width: 150px  !important;;
+}
+
+.first_li_level>ul>li:nth-child(1) {
+    left: -250px;
+}
+
+.first_li_level>ul>li:nth-child(2) {
+    left: 250px;
+}
+
+li [data-lilevel='1']>ul>li:nth-child(1){
+    left: -125px;
+}
+li [data-lilevel='1']>ul>li:nth-child(2){
+    left: 125px;
+}
+
+
+li [data-lilevel='2']>ul>li:nth-child(1){
+    left: -55px;
+}
+li [data-lilevel='2']>ul>li:nth-child(2){
+    left: 55px;
+}
+
+li [data-lilevel='3']>ul>li:nth-child(1){
+    left: -100px;
+}
+li [data-lilevel='3']>ul>li:nth-child(2){
+    left: 100px;
+}
+
+
+
+.copy_btn,.collapse_tree_btn,.place_user_here{
+    font-size: 10px;
+}
+
+
+
+svg:not(:root) {
+    overflow: initial !important;
+}
+
+.svg_item{
+    position: absolute;
+}
+
+
+/*arrows*/
+
+.arrow {
+    width: 800px;
+    /* margin: 50px auto; */
+    display: inline;
+    position: absolute;
+}
+
+/*right arrow*/
+.point {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #2A3F54;
+    float: left;
+}
+
+.left_arrow {
+    border-right: 15px solid #2A3F54;
+    border-left: 0;
+}
+
+.vertical_col {
+    float: left;
+    border-bottom: 0px solid #2A3F54;
+    border-left: 5px solid #2A3F54;
+    border-right: 1px solid #2A3F54;
+    border-top: 0;
+    margin-left: 5px;
+}
+
+.line {
+    margin-top: 7px;
+    width: 150px;
+    background: #2A3F54;
+    height: 5px;
+    float: left;
+}
+
+.down_arrow {
+    border-top: 15px solid #2A3F54;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    position: absolute;
+    top: 49px;
+}
+
+.h_arrow{
+    padding: 0 50px;
+}
+
+.h_arrow_position_level_0{
+    top: 182px;left: 0%;
+}
+
+.h_arrow_position_level{
+    top: 140px;
+    left: -101.5px;
+}
+
+.v_arrow_position_level_0{
+    top: 126px;left: 50%;
+}
+
+.v_arrow_position_level{
+    top: 90px;
+    left: 50%;
+}
+
+
+.tree_btns{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    /* z-index: 1000; */
+    padding-top: 29%;
+    display: none;
+}
+
+.tree li:hover>.tree_btns{
+    display: block;
+}
+
+
+a.inner_block[data-active='not_active'],a.inner_block[data-active='active'] {
+    color: #FFF !important;
+}
+
+a.inner_block[data-active='half_active'],a.inner_block[data-active='expired'] {
+    color: #000 !important;
+}
+
+.collapse_tree_btn,.place_user_here{
+    margin-top: 20px;
+}
+
+

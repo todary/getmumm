@@ -1,0 +1,448 @@
+﻿/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.set-pad {
+    padding-top: 35px;
+}
+
+.set-row-pad {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/*=====================================
+  NAVBAR STYLES 
+    ===================================*/
+
+.logo-custom {
+    max-height: 40px;
+}
+
+#menu {
+    /*background-color: rgb(255, 255, 255);*/
+    color: #211d71;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    min-height: 70px;
+    border-bottom: 3px solid #211d71;
+    background: #E9E9E9;
+}
+
+.navbar-inverse {
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #211d71;
+    padding: 22px 10px;
+}
+
+/*=====================================
+  HOME STYLES 
+    ===================================*/
+.home-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/header.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    margin-top: 70px;
+}
+
+.home-sec .overlay {
+    background: rgba(38, 57, 88, 0.89);
+    min-height: 500px;
+}
+
+.home-sec h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+
+.home-sec h3 {
+    text-transform: uppercase;
+}
+
+.set-flexi {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    background-color: transparent;
+    border: 0px solid #000;
+    padding-top: 120px;
+}
+
+.flex-control-nav {
+    display: none !important;
+}
+
+.set-flexi a {
+    margin: 5px;
+}
+
+/*=====================================
+  TAG LINE STYLES 
+    ===================================*/
+
+.tag-line {
+    background: #E9E9E9;
+    color: #000;
+}
+
+.tag-line h2 {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px 10px 5px;
+    color: #211d71;
+}
+
+.tag-line h2 > i {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/*=====================================
+  HEADER LINE STYLES 
+    ===================================*/
+.header-line {
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    color: #000;
+}
+
+h1::after {
+    content: " ";
+    border-bottom: solid 3px #211d71;
+    display: block;
+    width: 200px;
+    margin: 12px auto;
+}
+
+/*=====================================
+  ABOUT STYLES 
+  ===================================*/
+.about-div {
+    padding: 30px;
+}
+
+.icon-round-border {
+    border: 10px double #1A94C4;
+    color: #2f9484;
+    text-align: center;
+    padding-top: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.icon-round-border:hover {
+    color: #fff;
+    border: 10px double #fff;
+    background-color: #1A94C4;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.about-div hr {
+    border: 1px solid #1A94C4;
+}
+
+.about-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-div p {
+    padding-top: 10px;
+}
+
+.btn-set {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+/*=====================================
+  FACULTY STYLES 
+  ===================================*/
+#faculty-sec {
+    background-color: #000;
+    color: #fff;
+}
+
+#faculty-sec .header-line {
+    color: #fff;
+}
+
+.faculty-div h4 {
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.faculty-div {
+    padding: 30px;
+}
+
+.faculty-div hr {
+    border: 1px solid #1A94C4;
+}
+
+.faculty-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.faculty-div p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.faculty-div img {
+    border: 10px double #fff;
+}
+
+/*=====================================
+  CONTACT STYLES 
+  ===================================*/
+#contact-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/contact.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#contact-sec .overlay {
+    background: rgba(0, 0, 0, 0.76);
+    min-height: 600px;
+}
+
+#contact-sec h1 {
+    color: #fff;
+}
+
+#contact-sec .form-control {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+/*=====================================
+  Footer STYLES 
+  ===================================*/
+#footer {
+    padding: 5px 20px;
+    background-color: #2d3d5a;
+    text-align: right;
+    color: #fff;
+    font-size: 15px;
+}
+
+.carousel-inner > .item{
+    width: 100%;
+    height: 500px;
+}
+
+.item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.carousel-caption {
+    bottom: 14%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.social_links{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: inline-block;
+}
+
+.social_links li{
+    float: left;
+    margin-right: 5px;
+}
+
+.social_links li .fa{
+    color: #FFF;
+    font-size: 15px;
+    line-height: 38px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius:100% ;
+}
+
+.social_links li a:hover{
+    text-decoration: none;
+}
+
+.social_links li .fa:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+
+.social_links li .fa-facebook{
+    background: #3b5998;
+}
+
+.social_links li .fa-twitter{
+    background: #1da1f2 ;
+}
+
+.social_links li .fa-google-plus{
+    background: #ea4235 ;
+}
+
+.social_links li .fa-pinterest{
+    background: #cc2028 ;
+}
+
+.social_links li .fa-instagram{
+    background: #da2f84  ;
+}
+
+.social_links li .fa-youtube{
+    background: #ee1c1b   ;
+}
+
+
+
+.social_links li a:hover .fa-facebook{
+    color: #3b5998;
+}
+
+.social_links li a:hover .fa-twitter{
+    color: #1da1f2 ;
+}
+
+.social_links li a:hover .fa-google-plus{
+    color: #ea4235 ;
+}
+
+.social_links li a:hover .fa-pinterest{
+    color: #cc2028 ;
+}
+
+.social_links li a:hover .fa-instagram{
+    color: #da2f84  ;
+}
+
+.social_links li a:hover .fa-youtube{
+    color: #ee1c1b   ;
+}
+
+.first_block{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.first_block .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.my_h1{
+    font-size: 26px;
+    color: #211d71;
+}
+
+.my_h1:after{
+    margin-left: 0px;
+}
+
+.register_parent_div{
+    padding-right: 25px;
+    border-right: 3px solid #211d71;
+    display: inline-block;
+}
+
+.padd-left{
+    padding-left: 0px;
+}
+
+.padd-right{
+    padding-right: 0px;
+}
+
+.btn-site-primary {
+    color: #fff;
+    background-color: #34316d;
+    border-color: #211d71;
+}
+
+.btn-site-primary:hover {
+    color: #fff;
+    background-color: #211d71;
+    border-color: #211d71;
+}
+
+.inner_container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-site-primary:focus{
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+    background-color: #211d71;
+}
+
+
+
+
+
+
+
+

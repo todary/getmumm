@@ -1,0 +1,5 @@
+2018-02-22 00:32:34
+{"amount":"50.00","currency1":"USD","currency2":"LTCT","address":"","item_name":"Start Plan"}
+{"amount":"50.00","currency1":"USD","currency2":"LTCT","address":"","item_name":"Start Plan"}
+{"amount":"50.00","currency1":"USD","currency2":"LTCT","address":"","item_name":"Start Plan"}
+{"amount":"50.00","currency1":"USD","currency2":"LTCT","address":"","item_name":"Start Plan"}
